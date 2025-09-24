@@ -1,0 +1,32 @@
+{
+  "nav_home": "الرئيسية",
+  "nav_activities": "الأنشطة",
+  "nav_team": "الفريق",
+  "nav_about": "من نحن",
+  "nav_contact": "تواصل معنا",
+  "join_us": "انضم إلينا",
+
+  "about_snippet_title": "من هي منظمة Familie.Nettverk؟",
+  "about_snippet_text": "نحن شبكة داعمة تسعى لبناء مجتمع مترابط وشامل للجميع في بيرغن. من خلال أنشطتنا وفعالياتنا، نهدف إلى تعزيز التواصل، تقديم الدعم، وخلق فرص جديدة للعائلات والأفراد.",
+  "about_snippet_button": "اقرأ المزيد عنا",
+  
+  "stats_title": "إنجازاتنا بالأرقام",
+
+  "video_title": "شاهد قصتنا",
+    "activities_page_title": "الأنشطة والفعاليات",
+  "activities_page_subtitle": "شاهدوا أجمل اللحظات والذكريات من فعالياتنا المتنوعة",
+  "photo_gallery_title": "معرض الصور",
+  "video_gallery_title": "مكتبة الفيديو",
+
+  "team_page_title": "فريقنا المتفاني",
+  "team_page_subtitle": "تعرف على الأفراد الذين يجعلون كل هذا ممكنًا",
+  
+  "about_page_title": "عن منظمة Familie.Nettverk",
+  "about_page_subtitle": "جسر التواصل وبناء مجتمع مترابط في قلب بيرغن.",
+  "about_story_title": "قصتنا",
+  "about_vision_title": "رؤيتنا",
+  "about_mission_title": "رسالتنا",
+  
+  "contact_page_title": "تواصل معنا",
+  "contact_page_subtitle": "يسعدنا دائمًا سماع آرائكم واقتراحاتكم"
+}

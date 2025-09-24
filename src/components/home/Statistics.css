@@ -1,0 +1,67 @@
+/* src/components/home/Statistics.css */
+
+.statistics-section {
+  padding: 60px 0;
+  background-color: #F8F9FA; /* نفس لون الخلفية العام للموقع */
+  text-align: center;
+}
+
+/* العنوان الرئيسي للقسم (نفس تصميم قسم "نبذة عنا" للتناسق) */
+.statistics-section .section-title {
+    font-size: 2.5rem;
+    color: #1A237E;
+    margin-bottom: 50px; /* زيادة المسافة السفلية */
+    font-weight: 700;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* شبكة من 4 أعمدة متساوية */
+  gap: 30px; /* مسافة بين البطاقات */
+}
+
+.stat-card {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px); /* تأثير الرفع عند التمرير */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  font-size: 3rem; /* حجم كبير للأيقونة (الرمز التعبيري) */
+  line-height: 1;
+  margin-bottom: 15px;
+  color: #1A237E;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #D32F2F; /* اللون الأحمر الدافئ للأرقام */
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 500;
+}
+
+/* تصميم متجاوب للشاشات الأصغر */
+@media (max-width: 992px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr); /* عمودان على الشاشات المتوسطة */
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-grid {
+    grid-template-columns: 1fr; /* عمود واحد على الشاشات الصغيرة */
+  }
+}

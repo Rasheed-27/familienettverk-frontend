@@ -1,0 +1,44 @@
+/* src/components/layout/Footer.css */
+
+.site-footer {
+  background-color: #ffffff; /* نفس لون الهيدر (الأزرق الداكن) */
+  color: #000000; /* رمادي فاتح للنصوص لجعلها مريحة للقراءة */
+  padding: 30px 0;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 50px; /* لإضافة مسافة بسيطة بين المحتوى والفوتر */
+}
+
+.site-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* جعل العناصر تتراص عمودياً */
+  align-items: center; /* توسيط المحتوى أفقياً */
+  gap: 15px;
+  text-align: center;
+}
+
+.copyright-text {
+    font-size: 14px;
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #D32F2F; /* استخدام الأحمر الدافئ عند التمرير */
+}

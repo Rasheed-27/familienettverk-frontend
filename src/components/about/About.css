@@ -1,0 +1,86 @@
+/* src/components/about/About.css */
+
+.about-page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* مسافة بين الأقسام */
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.content-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.content-image {
+  flex: 1; /* يأخذ نصف المساحة المتاحة */
+}
+
+.content-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.content-text {
+  flex: 1; /* يأخذ النصف الآخر */
+}
+
+.content-text h3 {
+  font-size: 2rem;
+  color: #1A237E;
+  margin: 0 0 15px 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* خط تزييني أسفل العنوان */
+.content-text h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #D32F2F;
+  border-radius: 2px;
+}
+
+.content-section.reverse .content-text h3::after {
+    left: auto;
+    right: 0;
+}
+
+.content-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* لجعل الأقسام التي لا تحتوي على صور تملأ العرض */
+.content-section:not(:has(.content-image)) .content-text {
+    flex-basis: 100%;
+    text-align: center;
+}
+.content-section:not(:has(.content-image)) .content-text h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+  .content-section, .content-section.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content-section.reverse .content-text h3::after,
+  .content-text h3::after {
+      left: 50%;
+      transform: translateX(-50%);
+  }
+}

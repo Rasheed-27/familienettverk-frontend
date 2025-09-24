@@ -1,0 +1,74 @@
+/* src/components/admin/layout/AdminLayout.css */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+.admin-sidebar {
+  width: 250px;
+  background-color: #1A237E;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-header {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.sidebar-header h3 {
+  margin: 0;
+}
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* يجعل القائمة تملأ المساحة المتاحة */
+}
+.admin-nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-left: 4px solid transparent;
+  transition: background-color 0.2s, border-left-color 0.2s;
+}
+.admin-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.admin-nav a.active {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-left-color: #D32F2F;
+  color: white;
+}
+.sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.admin-logout-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #D32F2F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.admin-main-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #F8F9FA;
+  overflow-y: auto;
+}
+
+html[dir="rtl"] .admin-layout {
+  flex-direction: row-reverse; /* عكس ترتيب القائمة الجانبية والمحتوى */
+}
+
+html[dir="rtl"] .admin-nav a {
+  border-left: none; /* إزالة الإطار الأيسر */
+  border-right: 4px solid transparent; /* إضافة إطار أيمن */
+  text-align: right;
+}
+
+html[dir="rtl"] .admin-nav a.active {
+  border-right-color: #D32F2F;
+}

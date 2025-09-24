@@ -1,0 +1,51 @@
+/* src/components/home/AboutSnippet.css */
+
+.about-snippet {
+  padding: 60px 0;
+  background-color: #ffffff; /* خلفية بيضاء نقية لهذا القسم */
+  text-align: center;
+}
+
+/* 
+  نستخدم نفس الكلاس .container لضمان التناسق في العرض والتوسيط.
+  لقد عرفنا أنماطه الأساسية في ملفات الهيدر والفوتر، 
+  لذلك لا نحتاج لإعادة تعريفه هنا. 
+  هذه هي قوة إعادة استخدام الكلاسات.
+*/
+.about-snippet .container {
+    max-width: 800px; /* نجعل المحتوى أضيق قليلاً لسهولة القراءة */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #1A237E; /* اللون الأزرق الداكن من هويتنا */
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  line-height: 1.8; /* ارتفاع سطر مريح للقراءة */
+  color: #555; /* لون رمادي داكن للنص */
+  margin-bottom: 30px;
+}
+
+.section-button {
+  display: inline-block;
+  background-color: transparent;
+  color: #D32F2F; /* اللون الأحمر الدافئ */
+  border: 2px solid #D32F2F;
+  padding: 12px 28px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.section-button:hover {
+  background-color: #D32F2F;
+  color: white;
+}

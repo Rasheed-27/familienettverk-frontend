@@ -1,0 +1,32 @@
+{
+  "nav_home": "Hjem",
+  "nav_activities": "Aktiviteter",
+  "nav_team": "Team",
+  "nav_about": "Om Oss",
+  "nav_contact": "Kontakt Oss",
+  "join_us": "Bli Med",
+
+  "about_snippet_title": "Hvem er Familie.Nettverk?",
+  "about_snippet_text": "Vi er et støttende nettverk som søker å bygge et sammenhengende og inkluderende fellesskap for alle i Bergen. Gjennom våre aktiviteter og arrangementer har vi som mål å forbedre kommunikasjonen, gi støtte og skape nye muligheter for familier og enkeltpersoner.",
+  "about_snippet_button": "Les mer om oss",
+  
+  "stats_title": "Våre prestasjoner i tall",
+
+  "video_title": "Se vår historie",
+   "activities_page_title": "Aktiviteter og arrangementer",
+  "activities_page_subtitle": "Se de vakreste øyeblikkene og minnene fra våre mangfoldige arrangementer",
+  "photo_gallery_title": "Fotogalleri",
+  "video_gallery_title": "Videobibliotek",
+  
+  "team_page_title": "Vårt dedikerte team",
+  "team_page_subtitle": "Møt personene som gjør alt dette mulig",
+  
+  "about_page_title": "Om Familie.Nettverk",
+  "about_page_subtitle": "En bro for kommunikasjon og bygging av et samlet fellesskap i hjertet av Bergen.",
+  "about_story_title": "Vår historie",
+  "about_vision_title": "Vår visjon",
+  "about_mission_title": "Vårt oppdrag",
+
+  "contact_page_title": "Kontakt Oss",
+  "contact_page_subtitle": "Vi er alltid glade for å høre dine meninger og forslag"
+}

@@ -1,0 +1,97 @@
+/* === 1. الأنماط العامة للقسم === */
+.gallery-section {
+  padding: 40px 0;
+  width: 100%;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1A237E;
+  margin-bottom: 50px;
+  word-wrap: break-word;
+}
+
+/* === 2. تصميم شبكة المحتوى (للصور والفيديوهات) === */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* === 3. تصميم بطاقة المحتوى (Card) === */
+.story-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* === 4. تصميم جزء الصورة / الفيديو === */
+.story-card-media {
+  position: relative;
+  /* للفيديو، سنستخدم نسبة 16:9 */
+  padding-top: 56.25%; 
+  background-color: #eee;
+}
+.story-card-media img,
+.story-card-media iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+/* للصور فقط، نحدد ارتفاعًا ثابتًا */
+.story-card-media.image-media {
+  height: 220px;
+  padding-top: 0; 
+}
+
+
+/* === 5. تصميم جزء المحتوى النصي === */
+.story-card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.story-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.story-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1A237E;
+  margin: 0 0 auto; /* هذا يدفع الوصف للأسفل */
+  line-height: 1.3;
+  padding-bottom: 10px;
+}
+
+.story-card-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 10px;
+}

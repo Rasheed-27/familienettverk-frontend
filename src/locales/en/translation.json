@@ -1,0 +1,32 @@
+{
+  "nav_home": "Home",
+  "nav_activities": "Activities",
+  "nav_team": "Team",
+  "nav_about": "About Us",
+  "nav_contact": "Contact Us",
+  "join_us": "Join Us",
+
+  "about_snippet_title": "Who is Familie.Nettverk?",
+  "about_snippet_text": "We are a supportive network that seeks to build a cohesive and inclusive community for everyone in Bergen. Through our activities and events, we aim to enhance communication, provide support, and create new opportunities for families and individuals.",
+  "about_snippet_button": "Read More About Us",
+  
+  "stats_title": "Our Achievements in Numbers",
+
+  "video_title": "Watch Our Story",
+    "activities_page_title": "Activities and Events",
+  "activities_page_subtitle": "Watch the most beautiful moments and memories from our diverse events",
+  "photo_gallery_title": "Photo Gallery",
+  "video_gallery_title": "Video Library",
+  
+  "team_page_title": "Our Dedicated Team",
+  "team_page_subtitle": "Meet the individuals who make all this possible",
+  
+  "about_page_title": "About Familie.Nettverk",
+  "about_page_subtitle": "A bridge for communication and building a cohesive community in the heart of Bergen.",
+  "about_story_title": "Our Story",
+  "about_vision_title": "Our Vision",
+  "about_mission_title": "Our Mission",
+
+  "contact_page_title": "Contact Us",
+  "contact_page_subtitle": "We are always happy to hear your opinions and suggestions"
+}

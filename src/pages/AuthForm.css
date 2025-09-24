@@ -1,0 +1,99 @@
+/* src/pages/AuthForm.css */
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #F8F9FA;
+  min-height: calc(100vh - 200px); /* يجعله يملأ المساحة بين الهيدر والفوتر */
+}
+
+.auth-form-wrapper {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.auth-form-wrapper h2 {
+  text-align: center;
+  color: #1A237E;
+  margin-bottom: 30px;
+}
+
+/* الأنماط .form-group و .submit-button موجودة بالفعل في Contact.css,
+   لكننا سنعيد تعريفها هنا لتكون خاصة بهذه الصفحات لتجنب التضارب */
+
+.auth-form-wrapper .form-group {
+  margin-bottom: 20px;
+}
+
+.auth-form-wrapper .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.auth-form-wrapper .form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.auth-form-wrapper .submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #D32F2F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.auth-form-wrapper .submit-button:hover {
+  background-color: #B71C1C;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+.auth-switch a {
+  color: #1A237E;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #D32F2F;
+  background-color: #FFEBEE;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.success-message {
+    color: #388E3C;
+    background-color: #E8F5E9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 15px;
+}

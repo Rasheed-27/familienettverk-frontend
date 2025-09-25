@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import Spinner from '../common/Spinner';
 import './HeroSlider.css';
 
-const API_URL = 'http://localhost:5000/api/slides';
-
+const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = `${BASE_URL}/api/slides`;
 const HeroSlider = () => {
   const { i18n } = useTranslation();
   const [slides, setSlides] = useState([]);

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import '../../components/admin/AdminCRUD.css';
 
-const API_URL = 'http://localhost:5000/api/slides';
-const UPLOAD_URL = 'http://localhost:5000/api/upload';
+const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = `${BASE_URL}/api/slides`;
+const UPLOAD_URL = `${BASE_URL}/api/upload`;
 
 const SliderManagerPage = () => {
   const [slides, setSlides] = useState([]);

@@ -58,9 +58,11 @@ function App() {
     };
     fetchContent();
   }, []);
-
   return (
+    
     <div className="App">
+      <h1>API URL IS: {import.meta.env.VITE_API_URL}</h1>
+
       <Header />
       <main>
         <Routes>

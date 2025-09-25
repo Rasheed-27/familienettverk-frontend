@@ -6,8 +6,8 @@ import Lightbox from '../components/activities/Lightbox'; // 1. استيراد
 import Spinner from '../components/common/Spinner';
 import './Page.css';
 
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-const API_URL = `${BASE_URL}/api/activities`;
+const API_URL = 'https://familienettverk-api.onrender.com/api/slides';
+
 const ActivitiesPage = () => {
   const { t, i18n } = useTranslation();
   const [activities, setActivities] = useState({ photos: [], videos: [] });

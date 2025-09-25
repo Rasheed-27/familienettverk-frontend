@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 
 const AuthContext = createContext(null);
-const API_URL = 'https://familienettverk-api.onrender.com/api/members';
+const API_URL = 'https://familienettverk-api.onrender.com/api/slides';
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);

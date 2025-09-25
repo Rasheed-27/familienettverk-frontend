@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'; // استيراد Link
 import { useAuth } from '../context/AuthContext';
 import './ProfilePage.css';
 
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-const API_URL = `${BASE_URL}/api/members/profile`;
+const API_URL = 'https://familienettverk-api.onrender.com/api/slides';
 
 const ProfilePage = () => {
   const { user, updateUser } = useAuth(); // جلب بيانات المستخدم الحالي من السياق

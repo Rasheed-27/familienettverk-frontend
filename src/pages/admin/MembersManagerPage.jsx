@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext'; // 1. استيراد السياق
 import '../../components/admin/AdminCRUD.css';
 
-const API_URL = 'http://localhost:5000/api/members';
+const API_URL = '/api/members';
 
 const MembersManagerPage = () => {
   const { user } = useAuth(); // 2. الحصول على المستخدم (والتوكن)

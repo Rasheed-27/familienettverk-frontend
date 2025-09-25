@@ -6,8 +6,7 @@ import Spinner from '../components/common/Spinner'; // 1. استيراد
 import './Page.css';
 import '../components/team/Team.css';
 
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-const API_URL = `${BASE_URL}/api/members/approved`;
+const API_URL = '/api/members/approved';
 
 const TeamPage = () => {
   const { t, i18n } = useTranslation();

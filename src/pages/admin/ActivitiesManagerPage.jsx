@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../../components/admin/AdminCRUD.css';
 
-const API_URL = 'http://localhost:5000/api/activities';
-const UPLOAD_URL = 'http://localhost:5000/api/upload';
+const API_URL = '/api/activities';
+const UPLOAD_URL = '/api/upload';
 
 const ActivitiesManagerPage = () => {
   const [activities, setActivities] = useState({ photos: [], videos: [] });

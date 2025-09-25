@@ -6,7 +6,7 @@ import Lightbox from '../components/activities/Lightbox'; // 1. استيراد
 import Spinner from '../components/common/Spinner';
 import './Page.css';
 
-const API_URL = 'https://familienettverk-api.onrender.com/api/slides';
+const API_URL = '/api/activities';
 
 const ActivitiesPage = () => {
   const { t, i18n } = useTranslation();

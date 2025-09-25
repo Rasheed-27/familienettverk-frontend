@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Spinner from '../../components/common/Spinner';
 import '../../components/admin/AdminCRUD.css';
 
-const API_URL = 'http://localhost:5000/api/content';
-
+const API_URL = '/api/content';
 /**
  * صفحة إدارة المحتوى العام — نسخة مدمجة ومنظفة
  * - دمجنا منطق الجلب، التحرير، الحفظ، وإلغاء التعديل.
